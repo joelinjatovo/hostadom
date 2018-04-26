@@ -1,0 +1,808 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+        #rev_slider_7_1 .uranus.tparrows {
+            width:50px;
+            height:50px;
+            background:rgba(255,255,255,0);
+        }
+        #rev_slider_7_1 .uranus.tparrows:before {
+            width:50px;
+            height:50px;
+            line-height:50px;
+            font-size:40px;
+            transition:all 0.3s;
+            -webkit-transition:all 0.3s;
+        }
+
+        #rev_slider_7_1 .uranus.tparrows:hover:before {
+            opacity:0.75;
+        }
+    </style>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery-migrate.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.themepunch.tools.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.themepunch.revolution.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/ai.js') }}"></script>
+
+<!--
+    <script type="text/javascript" src="{{ asset('js/revolution.extensions.slideanims.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/revolution.extensions.actions.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/revolution.extensions.layeranimation.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/revolution.extensions.navigation.min.js') }}"></script>
+-->
+
+    <noscript>&lt;style type="text/css"&gt; .wpb_animate_when_almost_visible { opacity: 1; }&lt;/style&gt;</noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+    <!-- insertion topbar -->
+    {% include 'top.html.twig' %}
+
+    <!-- insertion header -->
+    {% include 'header.html.twig' %}
+
+<div class="container">
+    <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding "  style="position: relative; left: -77px; box-sizing: border-box; width: 1354px;">
+        <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                        
+<div class="wpb_revslider_element wpb_content_element">
+    <link href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C400%2C300%2C500" rel="stylesheet" property="stylesheet" type="text/css" media="all">
+    <div id="rev_slider_7_1_wrapper" class="rev_slider_wrapper fullwidthbanner-container" data-source="gallery" style="margin:0px auto;background-color:transparent;padding:0px;margin-top:0px;margin-bottom:0px;">
+
+        <!-- START REVOLUTION SLIDER 5.3.1 auto mode -->
+        <div id="rev_slider_7_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.3.1">
+            <ul>	<!-- SLIDE  -->
+                <li data-index="rs-19" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="https://127.0.0.1/wordpress/revslider/wp-content/"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('images/transparent.png') }}" style='background-color:#156875' alt="" title="Accueil"  data-bgposition="center center" data-bgfit="100% 100%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 1 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-19-layer-4" 
+                         data-x="30" 
+                         data-y="67" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3000,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+
+                        style="z-index: 5; white-space: nowrap; font-size: 36.23px; line-height: 36.23px; font-weight: 100; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">.COM  . NET . MG .ORG ... </div>
+
+                    <!-- LAYER NR. 2 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-19-layer-5" 
+                         data-x="29" 
+                         data-y="131"
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3300,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"easeOutBounce"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 6; white-space: nowrap; font-size: 54.34px; line-height: 54.34px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">Offre spéciale </div>
+
+                    <!-- LAYER NR. 3 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-19-layer-6" 
+                         data-x="34" 
+                         data-y="211" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 7; white-space: nowrap; font-size: 16.3px; line-height: 31.7px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">Donnez un nom à votre activité, à votre service, à votre association<br>
+                        profitez de notre offre garantie le moins chers du marché. </div>
+
+                    <!-- LAYER NR. 4 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-19-layer-10" 
+                         data-x="606" 
+                         data-y="84" 
+                         data-width="['182']"
+                        data-height="['137']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 8; min-width: 182px; max-width: 182px; max-width: 137px; max-width: 137px; white-space: normal; font-size: 80px; line-height: 50px; font-weight: 400; color: rgba(77, 126, 137, 1.00);font-family:Roboto;"><div style=" white-space: nowrap;">&nbsp;&nbsp; à partir de<br>
+                        <span style="color:#69bae3;font-weight:bold; "><br>{{prixOffreSpeciale}}</span>/an</div> </div>
+
+                    <!-- LAYER NR. 5 -->
+                    <div class="tp-caption rev-btn  tp-resizeme" 
+                         id="slide-19-layer-11" 
+                         data-x="31" 
+                         data-y="290" 
+                         data-width="['281']"
+                        data-height="['53']"
+                        data-type="button" 
+                        data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"{{path('domaine')}}","delay":""}]'
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3500,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"easeInOutCirc"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeOut"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(119, 119, 119, 1.00);bs:solid;bw:0 0 0 0;"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[12,12,12,12]"
+                        data-paddingright="[35,35,35,35]"
+                        data-paddingbottom="[12,12,12,12]"
+                        data-paddingleft="[35,35,35,35]"
+                        style="z-index: 9; min-width: 281px; max-width: 281px; max-width: 53px; max-width: 53px; white-space: normal; font-size: 14.49px; line-height: 28.49px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:'Roboto', sans-serif;background-color:rgba(221, 129, 8, 1.00);border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">COMMANDER VOTRE DOMAINE </div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-index="rs-20" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="https://127.0.0.1/wordpress/revslider/wp-content/"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('images/transparent.png') }}" style='background-color:#002e3f' alt="" title="Accueil"  data-bgposition="center center" data-bgfit="100% 100%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 6 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-1" 
+                         data-x="977" 
+                         data-y="-8"
+                         data-width="['none','none','none','none']"
+                        data-height="['none','none','none','none']"
+                        data-type="image" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":2000,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 5;"><img src="{{ asset('images/datasecurity.png') }}" alt="" data-ww="300px" data-hh="300px" width="466" height="466" data-no-retina> </div>
+
+                    <!-- LAYER NR. 7 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-4" 
+                         data-x="28" 
+                         data-y="37" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":2500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 6; white-space: nowrap; font-size: 36.23px; line-height: 36.23px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">HEBERGEMENT WEB ILLIMITE </div>
+
+                    <!-- LAYER NR. 8 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-5" 
+                         data-x="26" 
+                         data-y="94" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3400,"frame":"0","from":"x:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 7; white-space: nowrap; font-size: 36.23px; line-height: 36.23px; font-weight: 300; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"><span style="font-weight:100;color:#ffab0a;">Ultra rapide</span> et <span style="font-weight:100;color:#ffab0a;">sécurisé</span> </div>
+
+                    <!-- LAYER NR. 9 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-6" 
+                         data-x="32" 
+                         data-y="151" 
+                         data-width="['190']"
+                        data-height="['32']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3600,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 8; min-width: 190px; max-width: 190px; max-width: 32px; max-width: 32px; white-space: nowrap; font-size: 17.3px; line-height: 31.7px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"><i style="color:#49a32b;" class="fa-icon-check"></i>  Espace disque illimité </div>
+
+                    <!-- LAYER NR. 10 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-7" 
+                         data-x="372" 
+                         data-y="145" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3800,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 9; white-space: nowrap; font-size: 17.3px; line-height: 31.7px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"> <i style="color:#49a32b;" class="fa-icon-check"></i> Haute disponibilité jusqu'à 99.9%  dans l'année </div>
+
+                    <!-- LAYER NR. 11 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-8" 
+                         data-x="29" 
+                         data-y="200"
+                         data-width="['207']"
+                        data-height="['32']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3600,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 10; min-width: 207px; max-width: 207px; max-width: 32px; max-width: 32px; white-space: nowrap; font-size: 17.3px; line-height: 31.7px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"><i style="color:#49a32b;" class="fa-icon-check"></i> Bande passante illimitée </div>
+
+                    <!-- LAYER NR. 12 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-9" 
+                         data-x="30" 
+                         data-y="243"
+                         data-width="['165']"
+                        data-height="['32']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3600,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+
+                        style="z-index: 11; min-width: 165px; max-width: 165px; max-width: 32px; max-width: 32px; white-space: nowrap; font-size: 17.3px; line-height: 31.7px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"><i style="color:#49a32b;" class="fa-icon-check"></i>  Boîte mail illimité </div>
+
+                    <!-- LAYER NR. 13 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-12" 
+                         data-x="373" 
+                         data-y="198" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3800,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 12; white-space: nowrap; font-size: 17.3px; line-height: 31.7px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"><i style="color:#49a32b;" class="fa-icon-check"></i>  Certficat SSL inclus et offert </div>
+
+                    <!-- LAYER NR. 14 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-13" 
+                         data-x="373" 
+                         data-y="248" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3800,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 13; white-space: nowrap; font-size: 17.3px; line-height: 31.7px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:Roboto;"><i style="color:#49a32b;" class="fa-icon-check"></i> Control Panel intuitif </div>
+
+                    <!-- LAYER NR. 15 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-20-layer-16" 
+                         data-x="693" 
+                         data-y="285" 
+                         data-width="['193']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3500,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 14; min-width: 193px; max-width: 193px; white-space: nowrap; font-size: 50px; line-height: 50px; font-weight: 400; color: rgba(119, 119, 119, 1.00);font-family:Roboto;">&nbsp;&nbsp;A partir de<br><span style=" color:#49a32b;font-weight:bold;">{{prixHebergement}}</span>/an </div>
+                </li>
+                <!-- SLIDE  -->
+                <li data-index="rs-21" data-transition="fade" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="default" data-easeout="default" data-masterspeed="300"  data-thumb="https://127.0.0.1/wordpress/revslider/wp-content/"  data-rotate="0"  data-saveperformance="off"  data-title="Slide" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
+                    <!-- MAIN IMAGE -->
+                    <img src="{{ asset('images/transparent.png') }}" style='background-color:#007991' alt="" title="Accueil"  data-bgposition="center center" data-bgfit="100% 100%" data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                    <!-- LAYERS -->
+
+                    <!-- LAYER NR. 16 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-21-layer-3" 
+                         data-x="892" 
+                         data-y="32"
+                         data-width="['none','none','none','none']"
+                        data-height="['none','none','none','none']"
+                        data-type="image" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":2200,"frame":"0","from":"x:right;","to":"o:1;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 5;"><img src="{{ asset('images/vps12.png') }}" alt="" data-ww="439px" data-hh="300px" width="376" height="250" data-no-retina> </div>
+
+                    <!-- LAYER NR. 17 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-21-layer-4" 
+                         data-x="27" 
+                         data-y="65" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3000,"frame":"0","from":"x:-200px;skX:85px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 6; white-space: nowrap; font-size: 36px; line-height: 36px; font-weight: 100; color: rgba(226, 226, 226, 1.00);font-family:Roboto;">Offrez-vous un serveur privé </div>
+
+                    <!-- LAYER NR. 18 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-21-layer-5" 
+                         data-x="24" 
+                         data-y="123" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":1500,"frame":"0","from":"x:-50px;opacity:0;","to":"o:1;","ease":"Power3.easeOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 7; white-space: nowrap; font-size: 54px; line-height: 56px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:Roboto;">SERVEUR DEDIE VPS </div>
+
+                    <!-- LAYER NR. 19 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-21-layer-6" 
+                         data-x="24" 
+                         data-y="196" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3500,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 8; white-space: nowrap; font-size: 16px; line-height: 31px; font-weight: 400; color: rgba(255, 255, 255, 1.00);font-family:'Roboto', sans-serif;">Améliorer la performance de votre activité en étant seul sur votre serveur<br>Vous allez pouvoir accéder à vos données en toute flexibilité et sécurité </div>
+
+                    <!-- LAYER NR. 20 -->
+                    <div class="tp-caption rev-btn  tp-resizeme" 
+                         id="slide-21-layer-10" 
+                         data-x="25" 
+                         data-y="283"
+                         data-width="['281']"
+                        data-height="['']"
+                        data-type="button" 
+                        data-actions='[{"event":"click","action":"simplelink","target":"_self","url":"{{ path('serveur') }}","delay":""}]'
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3500,"frame":"0","from":"z:0;rX:0deg;rY:0;rZ:0;sX:2;sY:2;skX:0;skY:0;opacity:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"easeInOutCirc"},{"delay":"wait","speed":1000,"frame":"999","to":"opacity:0;","ease":"Power2.easeIn"},{"frame":"hover","speed":"0","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;","style":"c:rgba(255, 255, 255, 1.00);bg:rgba(90, 90, 90, 1.00);bs:solid;bw:0 0 0 0;"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[10,10,10,10]"
+                        data-paddingright="[30,30,30,30]"
+                        data-paddingbottom="[10,10,10,10]"
+                        data-paddingleft="[30,30,30,30]"
+                        style="z-index: 9; min-width: 281px; max-width: 281px; max-width: px; max-width: px; white-space: normal; font-size: 14px; line-height: 30.49px; font-weight: 500; color: rgba(255, 255, 255, 1.00);font-family:'Roboto', sans-serif;background-color:rgba(73, 163, 43, 1.00);border-color:rgba(0, 0, 0, 1.00);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;">DECOUVREZ NOS OFFRES </div>
+
+                    <!-- LAYER NR. 21 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-21-layer-11" 
+                         data-x="253" 
+                         data-y="742" 
+                         data-width="['auto']"
+                        data-height="['auto']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":300,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 10; white-space: normal; font-size: 16px; line-height: 22px; font-weight: 400; color: rgba(150, 150, 150, 1.00);">Starts at<br>
+                    <span class="font-bold font-color">$9.95</span> /mo </div>
+
+                    <!-- LAYER NR. 22 -->
+                    <div class="tp-caption   tp-resizeme" 
+                         id="slide-21-layer-12" 
+                         data-x="670" 
+                         data-y="205"
+                         data-width="['165']"
+                        data-height="['111']"
+                        data-type="text" 
+                        data-responsive_offset="on" 
+                        data-frames='[{"delay":500,"speed":3000,"frame":"0","from":"y:-50px;opacity:0;","to":"o:1;","ease":"Power2.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"nothing"}]'
+                        data-textAlign="['left','left','left','left']"
+                        data-paddingtop="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        style="z-index: 11; min-width: 165px; max-width: 165px; max-width: 111px; max-width: 111px; white-space: nowrap; font-size: 50px; line-height: 50px; font-weight: 400; color: rgba(95, 176, 181, 1.00);font-family:Roboto;">A partir de<br>
+                    <span style=" color:#fff;font-weight:bold;">{{prixServeur}}</span> /an </div>
+                </li>
+            </ul>
+        <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
+        </div>
+        <script type="text/javascript">
+            /******************************************
+            -	PREPARE PLACEHOLDER FOR SLIDER	-
+            ******************************************/
+            var setREVStartSize=function(){
+                try{var e=new Object,i=jQuery(window).width(),t=9999,r=0,n=0,l=0,f=0,s=0,h=0;
+                    e.c = jQuery('#rev_slider_7_1');
+                    e.gridwidth = [1240];
+                    e.gridheight = [400];
+                    e.sliderLayout = "auto";
+                    if(e.responsiveLevels&&(jQuery.each(e.responsiveLevels,function(e,f){f>i&&(t=r=f,l=e),i>f&&f>r&&(r=f,n=e)}),t>r&&(l=n)),f=e.gridheight[l]||e.gridheight[0]||e.gridheight,s=e.gridwidth[l]||e.gridwidth[0]||e.gridwidth,h=i/s,h=h>1?1:h,f=Math.round(h*f),"fullscreen"==e.sliderLayout){var u=(e.c.width(),jQuery(window).height());if(void 0!=e.fullScreenOffsetContainer){var c=e.fullScreenOffsetContainer.split(",");if (c) jQuery.each(c,function(e,i){u=jQuery(i).length>0?u-jQuery(i).outerHeight(!0):u}),e.fullScreenOffset.split("%").length>1&&void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0?u-=jQuery(window).height()*parseInt(e.fullScreenOffset,0)/100:void 0!=e.fullScreenOffset&&e.fullScreenOffset.length>0&&(u-=parseInt(e.fullScreenOffset,0))}f=u}else void 0!=e.minHeight&&f<e.minHeight&&(f=e.minHeight);e.c.closest(".rev_slider_wrapper").css({height:f})
+
+                }catch(d){console.log("Failure at Presize of Slider:"+d)}
+            };
+
+            setREVStartSize();
+
+            var tpj=jQuery;
+
+            var revapi7;
+            tpj(document).ready(function() {
+                if(tpj("#rev_slider_7_1").revolution == undefined){
+                    revslider_showDoubleJqueryError("#rev_slider_7_1");
+                }else{
+                    revapi7 = tpj("#rev_slider_7_1").show().revolution({
+                        sliderType:"standard",
+                        jsFileLocation:"/js/",
+                        sliderLayout:"auto",
+                        dottedOverlay:"none",
+                        delay:8000,
+                        navigation: {
+                            keyboardNavigation:"off",
+                            keyboard_direction: "horizontal",
+                            mouseScrollNavigation:"off",
+                            mouseScrollReverse:"default",
+                            onHoverStop:"on",
+                            arrows: {
+                                style:"uranus",
+                                enable:true,
+                                hide_onmobile:false,
+                                hide_onleave:true,
+                                hide_delay:200,
+                                hide_delay_mobile:1200,
+                                tmp:'',
+                                left: {
+                                    h_align:"left",
+                                    v_align:"center",
+                                    h_offset:20,
+                                    v_offset:0
+                                },
+                                right: {
+                                    h_align:"right",
+                                    v_align:"center",
+                                    h_offset:20,
+                                    v_offset:0
+                                }
+                            }
+                        },
+                        visibilityLevels:[1240,1024,778,480],
+                        gridwidth:1240,
+                        gridheight:400,
+                        lazyType:"none",
+                        shadow:0,
+                        spinner:"spinner0",
+                        stopLoop:"off",
+                        stopAfterLoops:-1,
+                        stopAtSlide:-1,
+                        shuffle:"off",
+                        autoHeight:"on",
+                        disableProgressBar:"on",
+                        hideThumbsOnMobile:"off",
+                        hideSliderAtLimit:0,
+                        hideCaptionAtLimit:0,
+                        hideAllCaptionAtLilmit:0,
+                        debugMode:false,
+                        fallbacks: {
+                            simplifyAll:"off",
+                            nextSlideOnWindowFocus:"off",
+                            disableFocusListener:false,
+                        }
+                    });
+                }
+            });	/*ready*/
+        </script>
+        <script>
+            var htmlDivCss = unescape("%23rev_slider_7_1%20.uranus.tparrows%20%7B%0A%20%20width%3A50px%3B%0A%20%20height%3A50px%3B%0A%20%20background%3Argba%28255%2C255%2C255%2C0%29%3B%0A%20%7D%0A%20%23rev_slider_7_1%20.uranus.tparrows%3Abefore%20%7B%0A%20width%3A50px%3B%0A%20height%3A50px%3B%0A%20line-height%3A50px%3B%0A%20font-size%3A40px%3B%0A%20transition%3Aall%200.3s%3B%0A-webkit-transition%3Aall%200.3s%3B%0A%20%7D%0A%20%0A%20%20%23rev_slider_7_1%20.uranus.tparrows%3Ahover%3Abefore%20%7B%0A%20%20%20%20opacity%3A0.75%3B%0A%20%20%7D%0A");
+            var htmlDiv = document.getElementById('rs-plugin-settings-inline-css');
+            if(htmlDiv) {
+                htmlDiv.innerHTML = htmlDiv.innerHTML + htmlDivCss;
+            }
+            else{
+                var htmlDiv = document.createElement('div');
+                htmlDiv.innerHTML = '<style>' + htmlDivCss + '</style>';
+                document.getElementsByTagName('head')[0].appendChild(htmlDiv.childNodes[0]);
+            }
+        </script>
+    </div><!-- END REVOLUTION SLIDER -->
+</div>
+                    <div class="section-lg m-top0 domain-search">
+                        <div class="container">
+                            <div class="row">
+
+
+                                <div class="col-md-4">
+                                    <h2 class="font-white font-thin font30 m-bottom1">TROUVEZ UN DOMAINE</h2>
+                                    <h5 class="font-white font-thin font16">Seulement à partir de 45.000 Ar TTC / an</h5>
+                                </div>
+
+                                <div class="col-md-8">
+
+                                    <form method="POST" id="domain-searchform" action="https://panel.hostadom.com/domainchecker.php?systpl=maxhost-alt-v7">
+
+                                        <input class="input-text dsearch-home2" name="domain" id="dsearch" value="" placeholder="Entrer-votre-nom-de-domaine-ici" type="text"><select class="selectpicker " name="ext" data-style="btn-primary"><option>.com</option><option>.mg</option><option>.net</option><option>.org</option><option>.info</option><option>.biz</option></select><input class="btn black-button uppercase" id="submit" value="COMMANDER" type="submit">
+                                    </form>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vc_row-full-width"></div>
+    <div class="vc_row wpb_row vc_row-fluid " style=" ">
+        <div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="sec-title m-top4">
+                        <div class="col-lg-4 col-md-4 col-xs-12 text-right">
+                            <h2 class="font-bold font30 font-black text-uppercase">Découvrez <br /> nos solutions</h2>
+                        </div>
+                        <div class="col-lg-8 col-md-8 col-xs-12 m-bottom4">
+                            <p class="left-padd3">Expérimenté de plus d’une décennie dans l’administration de serveurs Web, de serveurs dédiés ainsi que d’infrastructure Cloud, Hostadom vous offre des services d’hébergement Web de haute disponibilité et des Serveur dédiés virtuels de qualité.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vc_row wpb_row vc_row-fluid " style=" ">
+        <div class="wpb_column vc_column_container vc_col-sm-4">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="m-bottom4 fea-col-box ">
+                        <div class="icon-boxed wide80 box-round"><span class="icon-user font30"></span></div>
+                        <div class="left-padd10">
+                            <h2 class="font-thin m-bottom1">Une équipe d'experts</h2>
+                            <p>Disposez de votre serveur pro sans le souci de la technique.</p>
+                        </div>
+                    </div>
+                    <div class="m-bottom4 fea-col-box">
+                        <div class="icon-boxed wide80 box-round"><span class="icon-pencil font30"></span></div>
+                        <div class="left-padd10">
+                            <h2 class="font-thin m-bottom1">Backup Automatisé</h2>
+                            <p>Des solutions de sauvegarde adaptées à votre hébergement.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column vc_column_container vc_col-sm-4">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="m-bottom4 fea-col-box ">
+                        <div class="icon-boxed wide80 box-round"><span class="icon-laptop font30"></span></div>
+                        <div class="left-padd10">
+                            <h2 class="font-thin m-bottom1">Sécurisés &amp; redondants</h2>
+                            <p>La sécurité et la haute disponibilité sont nos priorités.</p>
+                        </div>
+                    </div>
+                    <div class="m-bottom4 fea-col-box ">
+                        <div class="icon-boxed wide80 box-round"><span class="icon-phone font30"></span></div>
+                        <div class="left-padd10">
+                            <h2 class="font-thin m-bottom1">Support 7j/7 et 24h/24</h2>
+                            <p>Notre équipe technique vous répond dans le plus bref délai.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column vc_column_container vc_col-sm-4">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="wpb_single_image wpb_content_element vc_align_left">
+                        <div class="wpb_wrapper">
+                            <div class="vc_single_image-wrapper   vc_box_border_grey"><img width="298" height="305" src="{{ asset('images/data.jpg') }}" class="vc_single_image-img attachment-full" alt="" sizes="(max-width: 298px) 100vw, 298px"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -77px; box-sizing: border-box; width: 1354px;"><div class="wpb_column vc_column_container vc_col-sm-12">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="section-lg">
+                        <div class="two-color-boxes-dark">
+                            <div class="container">
+                                <div class="col-md-6 no-left-padd right-padd4 m-bottom3">
+                                    <h2 class="font-thin font-white font25 m-bottom3 bg-color"><span>Hébergement Web</span></h2>
+                                    <h4 class="m-bottom3 font20 font-thin font-white">Hébergement web (Standard Linux), tout inclus au meilleur prix</h4>
+                                    <img width="242" height="147" src="{{ asset('images/hosting1.png') }}" class="pull-left right-padd3 attachment-full" alt="">
+                                    <ul class="listitems font-white">
+                                        <li><i class="fa fa-angle-right"></i> Nom de domaine &amp; certificat SSL Offert !<br></li>
+                                        <li><i class="fa fa-angle-right"></i> Emails, bases de données, PHP ...<br></li>
+                                        <li><i class="fa fa-angle-right"></i> Trafic mensuel illimité<br></li>
+                                        <li><i class="fa fa-angle-right"></i> Support technique 24/7</li>
+                                    </ul>
+                                    <div class="button m-top4 text-right"><span class="font-thin font25 font-white">A partir de <span class="font-bold font-color">{{prixHebergement}}</span>/ an</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="{{ path('hebergement') }}" class="btn boxed-color-sm orange uppercase">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                </div>
+                                <div class="col-md-6 no-right-padd left-padd4 m-bottom3">
+                                    <h2 class="font-thin font-white font25 m-bottom3 bg-color"><span>Serveur dédié VPS</span></h2>
+                                    <h4 class="m-bottom3 font20 font-thin font-white">Disposez d'un serveur de haute performance pour votre Entreprise, serveur d'email, site web professionnel, vos fichiers en ligne ...</h4>
+                                    <img width="242" height="147" src="{{ asset('images/vps1.png') }}" class="pull-left right-padd3 attachment-full" alt="">
+                                    <ul class="listitems font-white">
+                                        <li><i class="fa fa-angle-right"></i> Espace disque extensible<br></li>
+                                        <li><i class="fa fa-angle-right"></i> 1 domaine offert à chaque serveur<br></li>
+                                        <li><i class="fa fa-angle-right"></i> 1 adresse IP fixe<br></li>
+                                        <li><i class="fa fa-angle-right"></i> Bande passante 100Mbs<br></li>
+                                        <li><i class="fa fa-angle-right"></i> RAM mémoire garantie</li>
+                                    </ul>
+                                    <div class="button m-top5 text-right"><span class="font-thin font25 font-white">A partir de <span class="font-bold font-color">{{prixServeur}}</span>/an</span> &nbsp;&nbsp;&nbsp;&nbsp; <a href="{{ path('serveur') }}" class="btn boxed-color-sm orange uppercase">+ Détails <i class="fa fa-arrow-circle-right"></i></a></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="vc_row-full-width"></div>
+    <div class="vc_row wpb_row vc_row-fluid " style=" ">
+        <div class="wpb_column vc_column_container vc_col-sm-6">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="m-top7">
+                        <h4 class="font-black font-bold font15 uppercase">Infos &amp; Astuces</h4>
+                        <h2 class="font-black font-bold font30 m-bottom3 uppercase">Hostadom</h2>
+                        <div class="blog-post">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 m-bottom3">
+                                    <h3 class="font-thin font20 m-bottom1"><a href="{{ path('blog1') }}">Pour le débutant, ce qu’il faut savoir sur l’hébergement d’un site web</a></h3>
+                                    <p class="m-bottom1 font14 font-grey"><i class="fa fa-calendar"></i> 05, Jan, 2017 &nbsp;&nbsp;&nbsp;<i class="fa fa-comments"></i> 0</p>
+                                    <p>Un site web a besoin d’un hébergement pour qu’il soit accessible via internet. Un serveur web est donc derrière chaque site internet que n...</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="blog-post">
+                            <div class="row">
+                                <div class="col-md-12 col-sm-12 m-bottom3">
+                                    <h3 class="font-thin font20 m-bottom1"><a href="{{ path('blog2') }}">Le nom de domaine pour votre entreprise à Madagascar</a></h3>
+                                    <p class="m-bottom1 font14 font-grey"><i class="fa fa-calendar"></i> 05, Jan, 2017 &nbsp;&nbsp;&nbsp;<i class="fa fa-comments"></i> 0</p>
+                                    <p>Le choix du nom de domaine dépend de beaucoup de paramètres dont le critère le plus tenu en compte est l’extension, la possibilité de le retenir...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="wpb_column vc_column_container vc_col-sm-6">
+            <div class="vc_column-inner ">
+                <div class="wpb_wrapper">
+                    <div class="vc_empty_space" style="height: 70px"><span class="vc_empty_space_inner"></span></div>
+                    <h3 class="font-bold font-black font15 uppercase">Des questions ?</h3>
+                    <h2 class="font-bold font-black font30 uppercase m-bottom3">Tél.: 032 032 1020</h2><div class="m-top4">
+                        <div aria-multiselectable="true" role="tablist" id="accordion10" class="panel-group collaps collaps-style-1">
+                            <div class="panel panel-default">
+                                <div id="heading101" role="tab" class="panel-heading">
+                                    <h4 class="panel-title uppercase"> <a aria-expanded="true" aria-controls="collapse101" href="#collapse101" data-parent="#accordion10" data-toggle="collapse" role="button">Votre assistance est-elle gratuite ? - OUI</a> </h4>
+                                </div>
+                                <div style="" aria-expanded="true" aria-labelledby="heading101" role="tabpanel" class="panel-collapse collapse in" id="collapse101">
+                                    <div class="panel-body">
+                                        <p>OUI, toute assistance de Hostadom est gratuite. Notre assistance couvre la disponibilité et la conformité des services que vous avez souscrit.</p>
+                                    </div>
+                                </div>
+                            </div><div class="panel panel-default">
+                                <div id="heading102" role="tab" class="panel-heading">
+                                    <h4 class="panel-title uppercase"> <a aria-expanded="false" aria-controls="collapse102" href="#collapse102" data-parent="#accordion10" data-toggle="collapse" role="button" class="collapsed">Quels sont les modes de paiements ?</a> </h4>
+                                </div>
+                                <div style="height: 0px;" aria-expanded="false" aria-labelledby="heading102" role="tabpanel" class="panel-collapse collapse " id="collapse102">
+                                    <div class="panel-body">
+                                        <p>Hostadom accepte les moyens de paiement suivant : <br />
+                                            Paypal, Carte VISA, Virement bancaire, Mobil Money, Espèce <br />
+                                            Vous pouvez effectuer votre paiement depuis n’importe quel point du monde.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="panel panel-default">
+                                <div id="heading103" role="tab" class="panel-heading">
+                                    <h4 class="panel-title uppercase"> <a aria-expanded="false" aria-controls="collapse103" href="#collapse103" data-parent="#accordion10" data-toggle="collapse" role="button" class="collapsed">Suis-je autonome ?</a> </h4>
+                                </div>
+                                <div style="height: 0px;" aria-expanded="false" aria-labelledby="heading103" role="tabpanel" class="panel-collapse collapse " id="collapse103">
+                                    <div class="panel-body">
+                                        <p>Oui, tous nos offres incluent un accès à votre Espace Panel qui permet tout configurer par votre soins et par votre technicien. En cas de besoin, notre service clientèle pourra vous fournir la liste des prestataires accrédité par Hostadom et vous serez en contact direct avec ce dernier.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    {% include 'footer.html.twig' %}
+
+    <link rel="stylesheet" property="stylesheet" id="rs-icon-set-fa-icon-css" href="{{ asset('css/font-awesome/css/font-awesome.css') }}" type="text/css" media="all">
+    <script type="text/javascript">
+        function revslider_showDoubleJqueryError(sliderID) {
+            var errorMessage = "Revolution Slider Error: You have some jquery.js library include that comes after the revolution files js include.";
+            errorMessage += "<br> This includes make eliminates the revolution slider libraries, and make it not work.";
+            errorMessage += "<br><br> To fix it you can:<br>&nbsp;&nbsp;&nbsp; 1. In the Slider Settings -> Troubleshooting set option:  <strong><b>Put JS Includes To Body</b></strong> option to true.";
+            errorMessage += "<br>&nbsp;&nbsp;&nbsp; 2. Find the double jquery.js include and remove it.";
+            errorMessage = "<span style='font-size:16px;color:#BC0C06;'>" + errorMessage + "</span>";
+            jQuery(sliderID).show().html(errorMessage);
+        }
+    </script>
+
+    <!-- insertion copyright -->
+    {% include 'copyright.html.twig' %}
+    <!-- end footer -->
+    <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+{% endblock %}

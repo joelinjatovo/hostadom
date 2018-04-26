@@ -1,0 +1,113 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+        <!-- insertion topbar -->
+        {% include 'top.html.twig' %}
+
+        <!-- insertion header -->
+        {% include 'header.html.twig' %}
+
+
+        <div class="page-header three">
+            <div class="container">
+                <div class="col-md-6 left-padd0 m-bottom2">
+                    <h2 class="uppercase font-thin font-white font30 m-bottom1">Nos prestataires partenaires</h2>
+                    <h4 class="font-white font18">Nos prestataires partenaires</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="breadcrumbs view-links"><a href="{{ path('index') }}">Home</a> <i>/</i> <span class="current">Nos prestataires partenaires</span></div>      </div>
+            </div>
+        </div>
+        
+        <div class="section-lg m-top8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 left-padd0">
+                        <div class="col-md-12">
+                            {% set i = 0 %}
+                            {% for prestataire in prestataires %}
+                                {% if (i%3)==0 %}
+                                <div class="vc_row wpb_row vc_row-fluid " style=" ">
+                                {% endif %}
+                                <div class="wpb_column vc_column_container vc_col-sm-4">
+                                    <div class="vc_column-inner ">
+                                        <div class="wpb_wrapper">
+                                            <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                                <div class="wpb_column vc_column_container vc_col-sm-12">
+                                                    <div class="vc_column-inner ">
+                                                        <div class="wpb_wrapper">
+                                                            <div class="wpb_single_image wpb_content_element vc_align_left" style="margin-bottom: 0px;">
+                                                                <div class="wpb_wrapper">
+                                                                    <a href="" target="_self"><div class="vc_single_image-wrapper   vc_box_border_grey">
+                                                                        <img width="1366" height="768" src="http://localhost/intc/wordpress-4.9.4/wp-content/uploads/2018/03/Sans-titre.png" class="vc_single_image-img attachment-full" alt="" />
+                                                                        </div>
+                                                                    </a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <h1 style="color: #1e73be;text-align: center" class="vc_custom_heading" >Vanila Hotel</h1><h2 style="text-align: center" class="vc_custom_heading" ><a href="https://hostadom.com/mg/serveur/" target=" _blank" title="Line">This is custom heading element</a></h2>
+                                            <h4 style="text-align: center" class="vc_custom_heading" >Addresse: Nosy Be</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                                {% set i = i+1 %}
+                                {% if (i%3)==0 %}
+                                </div>
+                                {% endif %}
+                            {% endfor %}
+                            
+                            {% if (i%3)<3 %}
+                            </div>
+                            {% endif %}
+                        </div>
+                        <div class="pagenation-blog"></div>
+                        <div id="comments" class="col-md-12"></div>        
+                      </div>
+
+                    </div>
+                </div>
+            </div>
+        
+        <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+        {% include 'footer.html.twig' %}
+        <!-- insertion copyright -->
+        {% include 'copyright.html.twig' %}
+        <!-- end footer -->
+
+        <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+
+{% endblock %}

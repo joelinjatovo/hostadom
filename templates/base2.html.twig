@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="mg-MG" class="js_active  vc_desktop  vc_transform  vc_transform js">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script type="text/javascript" async="" src="{{ asset('js/analytics.js') }}"></script><script async="" src="{{ asset('js/js.js') }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'UA-107901018-1');
+        </script>
+        
+        {% if title is defined %}
+            <title>Hostadom – {{title}}</title>
+        {% else %}
+            <title>Hostadom</title>
+        {% endif %}
+        
+        {% if keywords is defined %}
+            <meta name="keywords" content="{{keywords}}">
+        {% endif %}
+        
+        {% if description is defined %}
+            <meta name="description" content="{{description}}">
+        {% endif %}
+
+
+        <link rel="stylesheet" id="maxhost-fonts-css" href="{{ asset('css/webfonts.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="bootstrap.min.css-css" href="{{ asset('css/bootstrap.min.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-background-css" href="{{ asset('css/background.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-stylesheet-css" href="{{ asset('css/style.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-reset-css" href="{{ asset('css/reset.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="font-awesome.min.css-css" href="{{ asset('css/font-awesome/css/font-awesome.min.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="simple-line-icons.css-css" href="{{ asset('css/simple-line-icons/css/simple-line-icons.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="et-line-font.css-css" href="{{ asset('css/etlinefont-bower/et-line-font.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-responsive-leyouts-css" href="{{ asset('css/responsive-leyouts.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-mega-menu-css" href="{{ asset('css/menu.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-sky-form-css" href="{{ asset('css/sky-forms.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="animations.min.css-css" href="{{ asset('css/animations.min.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="cubeportfolio.min.css-css" href="{{ asset('css/cubeportfolio.min.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="maxhost-bluesea-css" href="{{ asset('css/bluesea.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="contact-form-7-css" href="{{ asset('css/styles.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="rs-plugin-settings-css" href="{{ asset('css/settings.css') }}" type="text/css" media="all">
+        <link rel="stylesheet" id="js_composer_front-css" href="{{ asset('css/js_composer.min.css') }}" type="text/css" media="all">
+
+        <!--<script type="text/javascript" src="{{ asset('js/jquery_005.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/jquery-migrate.min.js') }}"></script>
+        <script type="text/javascript" src="{{ asset('js/ai.js') }}"></script>-->
+
+        <!--[if lte IE 9]>
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/vc_lte_ie9.min.css') }}" media="screen"><![endif]-->
+        <meta name="generator" content="Powered by Slider Revolution 5.3.1 - responsive, Mobile-Friendly Slider Plugin for WordPress with comfortable drag and drop interface.">
+
+
+        {% block stylesheets %}{% endblock %}
+
+        <!-- Custom CSS Codes
+    ========================================================= -->
+        <style id="custom-style">
+            /* Logo ------------------------------------------------------------------------ */
+            .navbar-brand.logo {
+                background: url("{{ asset('images/logo.png') }}") no-repeat scroll left 21px !important;
+            }
+            .site_wrapper {
+                background:#FFF;
+                margin:auto;
+                width:100%;
+                overflow:hidden;
+            }
+            .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+                width: 30%;
+                margin: 0 3% 2.992em 0;
+            }
+            @media only screen and (max-width: 639px) {
+                .woocommerce ul.products li.product, .woocommerce-page ul.products li.product{
+                    width: 100%;
+                    margin: auto;
+                }
+            }
+
+        </style>
+
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+    </head>
+    <body class="home page-template page-template-page-vc page-template-page-vc-php page page-id-880 wpb-js-composer js-comp-ver-5.0.1 vc_responsive">
+
+    {% block body %}{% endblock %}
+
+    <a href="#" class="scrollup"></a>
+
+    {% block javascripts %}{% endblock %}
+
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var wpcf7 = {"apiSettings":{"root":"https:\/\/hostadom.com\/mg\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}},"cached":"1"};
+        /* ]]> */
+    </script>
+    <script type="text/javascript" src="{{ asset('js/scripts.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/pageloader.js') }}"></script>
+    <script type="text/javascript">
+        /* <![CDATA[ */
+        var prefix_object_name = {"error_while_ajax_request":"Error while ajax request","thank_you_your_email_has_been_sent":"Thank you, your email has been sent","please_try_again":"Please, fill in the required fields correctly!"};
+        /* ]]> */
+    </script>
+
+    <script type="text/javascript" src="{{ asset('js/maxhost-main.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.easing.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/animations.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/appear.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.cubeportfolio.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/main5.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/sticky.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.carousel.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/custom.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/totop.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/comment-reply.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/wp-embed.min.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/js_composer_front.min.js') }}"></script>
+
+    </body>
+</html>

@@ -1,0 +1,231 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+        <!-- insertion topbar -->
+        {% include 'top.html.twig' %}
+
+        <!-- insertion header -->
+        {% include 'header.html.twig' %}
+
+
+        <div class="page-header three">
+            <div class="container">
+                <div class="col-md-6 left-padd0 m-bottom2">
+                    <h2 class="uppercase font-thin font-white font30 m-bottom1">Hébergement Web...</h2>
+                    <h4 class="font-white font18">Hébergement Web</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="breadcrumbs view-links"><a href="{{ path('index') }}">Home</a> <i>/</i> <span class="current">Hébergement Web</span></div>      </div>
+            </div>
+        </div>
+
+        <div class="section-lg m-top8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 left-padd0">
+
+                        <div class="col-md-12">           		  <div class="vc_row wpb_row vc_row-fluid " style=" padding-top: 5px; "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+                                            <h3 class="text-center font-bold font-black font15 uppercase">Un hébergement au meilleur prix</h3>
+
+                                            <h2 class="text-center font-bold font-black font30 uppercase">Pack tout inclus</h2>
+                                            <div class="title-line-shape m-bottom3"></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid " style=" padding-bottom: 70px; "><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom4">
+                                                <div class="pricing-box style-1 text-center ">
+                                                    <div class="font-thin font20 font-black uppercase">Perso</div>
+                                                    <div class="price font-thin-xs font45 font-white">{{prixHebergementPerso}}<span class="font18"> / an</span></div>
+                                                    <ul class="fea-lists"><li>100 Go d'Espace disque<br></li><li>Trafic mensuel illimité<br></li><li>10 adresses email<br></li><li>1 domaine offert<br></li><li>1 base de données Mysql 5</li></ul>
+                                                    <div class="button m-top2"><a href="https://panel.hostadom.com/cart.php?a=add&amp;pid=4" class="btn samll-grey-button uppercase">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                </div>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom4">
+                                                <div class="pricing-box style-1 text-center active">
+                                                    <div class="font-thin font20 font-black uppercase">Pro</div>
+                                                    <div class="price font-thin-xs font45 font-white">{{prixHebergementStandard}}<span class="font18"> / an</span></div>
+                                                    <ul class="fea-lists"><li>250 Go d'Espace disque<br></li><li>Trafic mensuel illimité<br></li><li>100 adresses email<br></li><li>1 domaine offert<br></li><li>2 x base de données Mysql 5</li></ul>
+                                                    <div class="button m-top2"><a href="https://panel.hostadom.com/cart.php?a=add&amp;pid=1" class="btn samll-grey-button uppercase">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                </div>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom4">
+                                                <div class="pricing-box style-1 text-center ">
+                                                    <div class="font-thin font20 font-black uppercase">Performance</div>
+                                                    <div class="price font-thin-xs font45 font-white">{{prixHebergementPro}}<span class="font18"> / an</span></div>
+                                                    <ul class="fea-lists"><li>Espace disque illimité<br></li><li>Trafic mensuel illimité<br></li><li>250 adresses email<br></li><li>1 domaines offerts<br></li><li>4 x base de données Mysql 5</li></ul>
+                                                    <div class="button m-top2"><a href="https://panel.hostadom.com/cart.php?a=add&amp;pid=6" class="btn samll-grey-button uppercase">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                </div>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom4">
+                                                <div class="pricing-box style-1 text-center ">
+                                                    <div class="font-thin font20 font-black uppercase">Liberty</div>
+                                                    <div class="price font-thin-xs font45 font-white">{{prixHebergementPerformance}}<span class="font18"> / an</span></div>
+                                                    <ul class="fea-lists"><li>Espace disque illimité<br></li><li>Trafic mensuel illimité<br></li><li>Adresses email illimitées et 5Go/boîte<br></li><li>1 domaine offert<br></li><li>Base de données Mysql5 illimitée</li></ul>
+                                                    <div class="button m-top2"><a href="https://panel.hostadom.com/cart.php?a=add&amp;pid=5" class="btn samll-grey-button uppercase">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                </div>
+                                            </div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -75.5px; box-sizing: border-box; width: 1351px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="section-lg m-top7">
+                                                <div class="side-image">
+                                                    <div class="image-container col-simg">
+                                                        <div class="background-image-holder"> </div>
+                                                    </div>
+
+                                                    <div class="col-scon-info">
+                                                        <div class="container pull-left">
+                                                            <div class="col-md-7">
+                                                                <h3 class="font-color font16 uppercase">Hébergement de site web à Madagascar</h3>
+
+                                                                <h2 class="font40 font-thin-xs m-bottom2">Pourquoi nous choisir ?</h2>
+                                                                <p class="m-bottom2">Notre formule d'hébergement offre tout ce qu'il faut pour votre site en toute efficacité et simplicité.</p>
+                                                                <ul class="listitems"><li><i class="fa fa-check"></i> Garantie de meilleures offres du marché<br></li><li><i class="fa fa-check"></i> Une équipe locale à votre écoute<br></li><li><i class="fa fa-check"></i> Une société de confiance<br></li><li><i class="fa fa-check"></i> Une connexion réseau rapide<br></li><li><i class="fa fa-check"></i> Un support client réactif et GRATUIT<br></li><li><i class="fa fa-check"></i> Des serveurs de qualités avec Garanties</li></ul>
+                                                                <h3 class="font25 font-thin m-top3">Prix accessible à tous :  <span class="font-bold font-color">{{prixHebergementPerso}}</span> /an seulement, mettez votre site en ligne.</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row wpb_row vc_row-fluid " style=" padding-top: 70px; "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+                                            <h3 class="text-center font-bold font-black font15 uppercase">Hostadom</h3>
+
+                                            <h2 class="text-center font-bold font-black font30 uppercase">hébergements optimisés</h2>
+                                            <div class="title-line-shape m-bottom3"></div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid " style=" "><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom5 fea-sce-col ">
+                                                <div class="iconbox-left"><span class="icon-user font60 font-color"></span></div>
+                                                <div class="left-padd8 ">
+                                                    <h2 class="font-thin m-bottom1 ">Equipe expérimentée</h2>
+                                                    <p>L'expérience de l'ingénieur fondateur et de sa sélection font l'équipe d'Hostadom le meilleur.</p>
+                                                </div>
+                                            </div><div class="m-bottom5 fea-sce-col active">
+                                                <div class="iconbox-left"><span class="icon-pencil font60 font-color"></span></div>
+                                                <div class="left-padd8 ">
+                                                    <h2 class="font-thin m-bottom1 ">Des outils en 1 clic</h2>
+                                                    <p>Des logiciels et scripts qui facilitent la mise en oeuvre de votre hébergement.</p>
+                                                </div>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom5 fea-sce-col ">
+                                                <div class="iconbox-left"><span class="icon-cloud-upload font60 font-color"></span></div>
+                                                <div class="left-padd8 ">
+                                                    <h2 class="font-thin m-bottom1 ">Le web pour les pros</h2>
+                                                    <p>Tout est réuni afin de créer un environnement web professionnel.</p>
+                                                </div>
+                                            </div><div class="m-bottom5 fea-sce-col ">
+                                                <div class="iconbox-left"><span class="icon-speedometer  font60 font-color"></span></div>
+                                                <div class="left-padd8 ">
+                                                    <h2 class="font-thin m-bottom1 ">Hostadom Panel</h2>
+                                                    <p>Un tableau de bord complet, une interface facile à prendre en main.</p>
+                                                </div>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="m-bottom5 fea-sce-col ">
+                                                <div class="iconbox-left"><span class="icon-reload  font60 font-color"></span></div>
+                                                <div class="left-padd8 ">
+                                                    <h2 class="font-thin m-bottom1 ">Chargement rapide</h2>
+                                                    <p>Nous sommes utilisons la dernière technologie afin d’accélérer l'ouverture de votre site web.</p>
+                                                </div>
+                                            </div><div class="m-bottom5 fea-sce-col ">
+                                                <div class="iconbox-left"><span class="icon-call-in font60 font-color"></span></div>
+                                                <div class="left-padd8 ">
+                                                    <h2 class="font-thin m-bottom1 ">Support 24/7</h2>
+                                                    <p>Nous répondons votre ticket en moins d'une heure. Vous pouvez nous appeler au besoin.</p>
+                                                </div>
+                                            </div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -75.5px; box-sizing: border-box; width: 1351px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div style="background: rgba(0, 0, 0, 0) url({{ asset('images/parallax-bg5.jpg') }}) no-repeat fixed center top / cover ;" class="section-lg bg-parallax-12 text-center m-top5">
+                                                <div class="container">
+                                                    <div class="row">
+
+                                                        <h3 class="text-center font-bold font-white font15 uppercase">Ils continuent à </h3>
+                                                        <h2 class="text-center font-bold font-white font30 uppercase">parler de nous</h2>
+                                                        <div class="title-line-shape m-bottom3"></div>
+
+                                                        <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
+                                                            <ol class="carousel-indicators white-color"><li data-target="#carousel-example-generic1" class="" data-slide-to="0"></li><li data-target="#carousel-example-generic1" data-slide-to="1" class="active"></li><li data-target="#carousel-example-generic1" data-slide-to="2" class=""></li>	</ol><div class="carousel-inner" role="listbox"><div class="item">
+                                                                    <div class="col-md-9 sec-auto-margin">
+                                                                        <p class="font-thin font20 font-white line-height">Depuis
+                                                                            le 30 décembre 2013, notre site est hébergé chez Hostadom, notre
+                                                                            webmaster n'a jamais eu de souci. Il a beaucoup apprécié votre service.
+                                                                            Notre site est toujours en ligne et rapide. Merci à vous de l'avoir
+                                                                            assuré jusque maintenant et pour l'avenir, nous vous faisons confiance !</p>
+                                                                        <p class="m-top3 font-white"><span class="font18">Rachida</span> <span class="italic">/ Villa les Orchidés</span></p>
+                                                                    </div>
+                                                                </div><div class="item active">
+                                                                    <div class="col-md-9 sec-auto-margin">
+                                                                        <p class="font-thin font20 font-white line-height">Depuis
+                                                                            sa phase de test jusqu'à son déploiement actuel, nous n'avons rien à
+                                                                            dire sur le service de Hostadom. Nous allons bientôt prendre un nouveau
+                                                                            serveur VPS pour un autre projet. Merci à vous</p>
+                                                                        <p class="m-top3 font-white"><span class="font18">Directrice de publication</span> <span class="italic">/ Media Diffusion Madagascar</span></p>
+                                                                    </div>
+                                                                </div><div class="item">
+                                                                    <div class="col-md-9 sec-auto-margin">
+                                                                        <p class="font-thin font20 font-white line-height">Merci à INTC d'avoir choisi votre service pour l'hébergement de mes sites. J'ai 3 sites chez vous toujours contente,</p>
+                                                                        <p class="m-top3 font-white"><span class="font18">Nour</span> <span class="italic">/ Auditec Mayotte</span></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div></div></div></div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row wpb_row vc_row-fluid " style=" padding-top: 60px; "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+                                            <h3 class="text-center font-bold font-black font15 uppercase">Ils nous font confiance</h3>
+
+                                            <h2 class="text-center font-bold font-black font30 uppercase">Nos clients et nos partenaires</h2>
+                                            <div class="title-line-shape m-bottom3"></div><div class="section-lg ">
+                                                <div class="container">
+
+                                                    <div class="col-md-12 col-sm-12">
+
+
+
+                                                        <div class="col-md-2 col-sm-3 col-xs-3 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client1-1.png') }}" class="img-responsive attachment-full" alt="" height="56" width="169"> </div>
+
+                                                        <div class="col-md-2 col-sm-3 col-xs-3 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client2-1.png') }}" class="img-responsive attachment-full" alt="" height="56" width="175"> </div>
+
+                                                        <div class="col-md-2 col-sm-3 col-xs-3 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client3-1.png') }}" class="img-responsive attachment-full" alt="" height="56" width="143"> </div>
+
+                                                        <div class="col-md-2 col-sm-3 col-xs-3 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client4-1.png') }}" class="img-responsive attachment-full" alt="" height="56" width="173"> </div>
+
+                                                        <div class="col-md-2 col-sm-3 col-xs-3 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client5-1.png') }}" class="img-responsive attachment-full" alt="" height="56" width="143"> </div>
+
+                                                        <div class="col-md-2 col-sm-3 col-xs-3 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client6.png') }}" class="img-responsive attachment-full" alt="" height="56" width="171"> </div>
+
+                                                    </div>
+                                                </div>
+                                            </div></div></div></div></div>
+                        </div>
+
+                        <div class="pagenation-blog">
+                        </div>
+                        <div id="comments" class="col-md-12">
+
+
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+        {% include 'footer.html.twig' %}
+        <!-- insertion copyright -->
+        {% include 'copyright.html.twig' %}
+        <!-- end footer -->
+
+        <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,190 @@
+/* Logo */
+.navbar-brand.logo {
+	background: url(../../images/logo-b-sea.png) no-repeat left 21px;
+}
+.list-unstyled a:hover, .dropdown-menu>li>a:hover, .font-color, .iconbox, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:hover,
+.icon-boxed.wide90, .view-links a, .sky-form a, .sky-form .checkbox input + i::after, .fea-col-box:hover .wide80{
+	color:#7895a4;
+}
+.fea-col-box.active, .ms-layer.btn3, .orange-button, .fea-col:hover .iconbox, .iconbox:hover, .iconbox.active, .orange-button.one, .title-line, .blue-button,
+.fea-sce-col:hover .icon-boxed, .fea-sce-col.active .icon-boxed, .carousel-indicators .active, .small-circle-no, .orange-button.two, ul.social-icons li a:hover,
+.pricing-box.style-1 div.price, .samll-grey-button:hover, .pricing-box.style-1:hover .samll-grey-button, .pricing-box.style-1.active .samll-grey-button, .sky-form .button.seven, .header-top.black-bg-light a.register-btn, .button a.boxed-color-sm.orange, .button a.boxed-color-xs.orange, .sec-col-left h2 span, .sec-col-right h2 span, .color-bg, .service-title-color, form .submit-btn, .header.headr-style-2 .navbar-default, .compact .header.olivebg, h2.bg-color span, .team-thumb:hover .team-col .team-overlay, .team-thumb.active .team-col .team-overlay, .sky-form .button, .sec-title h2::before, .fea-col-box:hover, .tab-style .nav-tabs > li.active > a, .tab-style .nav-tabs > li.active > a:focus, .tab-style .nav-tabs > li.active > a:hover, .tab-style .nav-tabs > li > a:hover, .new-domin-list li,
+.carousel-indicators .active, .carousel-indicators.white-color .active, .price-info-circle, .pricing-box-home2 h2, .pricing-box-home2 .order,
+.collaps-style-2 .panel-default > .panel-heading, .bg-color-plain, .tab-style-1 .nav-tabs > li.active > a, .tab-style-1 .nav-tabs > li.active > a:focus, .tab-style-1 .nav-tabs > li.active > a:hover, .tab-style-1 .nav-tabs > li > a:hover, .small-circle-commet, .pricing-box-home5 h2, .pricing-box-home5:hover .price, .pricing-box-home5.active .price, .pricing-box-home5:hover .order-now, .pricing-box-home5.active .order-now, .two-color-boxes-multi{
+	background:#7895a4;
+}
+.col-fea-box{
+	background: rgba(126, 207, 254, .8);
+}
+.orange-button, .blue-button, .samll-grey-button:hover, .pricing-box.style-1:hover .samll-grey-button, .pricing-box.style-1.active .samll-grey-button, .col-fea-box-white::before{
+	border:solid 1px #7895a4;
+}
+.domain-search {
+	/*background:#7895a4 url(../../images/clouds-white.png) repeat-x center bottom;*/
+	background:#1c4e67;
+  margin-top: -34px !important;
+}
+.service-title {
+    background: #7895a4 url(../images/clouds-white-small.png) no-repeat scroll left bottom;
+}
+.domain-search.shape-white {
+    background: #7895a4 url(../images/shape-white.png) no-repeat scroll center bottom;
+}
+.sky-form .radio input:checked + i, .sky-form .checkbox input:checked + i, .sky-form .toggle input:checked + i{
+	border-color:#7895a4;
+}
+
+/*New for WooCommerce*/
+.button-shop {
+	background: #7895a4;
+	border: 1px solid #7895a4;
+	color: #fff;
+}
+
+.button-shop:hover {
+	background: #222;
+	color: #fff;
+	border: 1px solid #222;
+}
+
+.dlink, .zoom {
+  color: #7895a4 !important;
+}
+
+.dlink:hover, .zoom:hover {
+  color: #fff !important;
+  background-color: #7895a4 !important;
+}
+
+.products .product .onsale {
+  background: #7895a4 !important;
+}
+
+.pagination-button {
+  padding: 10px !important;
+  color: #fff !important;
+  background-color: #7895a4;
+  border: none;
+}
+
+.amount {
+	color: #7895a4 !important;
+}
+
+.star-rating span {
+  color: #7895a4 !important;
+}
+
+.shop-page .list ul li:before {
+  position: relative;
+    top: 0;
+    left: 0;
+    content: "\f0da";
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    color: #7895a4;
+    margin-right: 10px;
+    font-style: normal;
+    font-weight: normal;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+
+/* scroll up */
+.scrollup {
+	background: #7895a4 url(../images/scroll-top-arrow.png) no-repeat 15px 14px;
+}
+/* Shop */
+.pagination-custom .pagination-button:hover {
+	background-color: #7895a4;
+	border-color: #7895a4;
+}
+.product_meta > span > a,
+.single-prodcut .tabs .nav-tabs > li.active > a, 
+.tabbed-widget .tabs .nav-tabs > li.active > a,
+.shop-with-sidebar .widget .title > a,
+.shopping-cart .cart-table tbody > tr > td > a,
+.shop-checkout .cart-table a,
+.shop-checkout .panel-group .panel-body label span,
+.page-shop-login label span {
+	color: #7895a4;
+}
+.single-prodcut .tabs .nav-tabs > li.active > a:after,
+.tabbed-widget .tabs .nav-tabs > li.active > a:after
+.shop-checkout .panel-group .panel-title > a {
+	background-color: #7895a4;
+}
+.woocommerce-message .button.wc-forward{
+	background: #7895a4 none repeat scroll 0 0;
+}
+.summary.entry-summary ul li:before, .woocommerce-tabs.wc-tabs-wrapper ul li:before {
+	color: #7895a4;
+}
+.woocommerce div.product form.cart .button, .coupon input.button, .checkout_coupon input.button, .login input.button, .login input.button:hover,
+.cart .actions input.button, .woocommerce div.product form.cart .button:hover, .coupon input.button:hover, .checkout_coupon input.button:hover,
+.cart .actions input.button:hover, #review_form footer button, .woocommerce-tabs ul.tabs li.active, .woocommerce-tabs ul.tabs li:hover,
+.woocommerce .product ul.tabs li.active a, .woocommerce .product ul.tabs li:hover a, .tags li a:hover, .tagcloud a:hover{
+    background-color: #7895a4;
+}
+.pagination-button {
+  background-color: #7895a4;
+}
+.dlink, .zoom {
+  color: #7895a4 !important;
+}
+.dlink:hover, .zoom:hover {
+  background-color: #7895a4 !important;
+}
+.products .product .onsale {
+  background: #7895a4 !important;
+}
+.amount {
+  color: #7895a4 !important;
+}
+.star-rating span {
+  color: #7895a4 !important;
+}
+.list ul li:before {
+	color: #7895a4;
+}
+.product_meta > span > a {
+  color: #7895a4;
+}
+.button-shop {
+    background: #7895a4 none repeat scroll 0 0;
+    border: 1px solid #7895a4;
+}
+.pagination-custom .pagination-button:hover {
+    background-color: #7895a4;
+	border-color: #7895a4;
+}
+.shop-with-sidebar .widget .title > a {
+	color: #7895a4;
+}
+.single-prodcut .tabs .nav-tabs > li.active > a:after,
+.tabbed-widget .tabs .nav-tabs > li.active > a:after {
+  background: #7895a4;
+}
+.single-prodcut .tabs .nav-tabs > li.active > a,
+.tabbed-widget .tabs .nav-tabs > li.active > a {
+  color: #7895a4;
+}
+.shopping-cart .cart-table tbody > tr > td > a {
+	color: #7895a4;
+}
+.shop-checkout .panel-group .panel-title > a  {
+	background-color: #7895a4;
+}
+.shop-checkout .cart-table a {
+	color: #7895a4;
+}
+.shop-checkout .panel-group .panel-body label span {
+	color: #7895a4;
+}
+.page-shop-login label span {
+	color: #7895a4;
+}
+.woocommerce .widget_price_filter .ui-slider .ui-slider-range, .woocommerce .widget_price_filter .ui-slider .ui-slider-handle {
+    background-color: #7895a4 !important;
+}

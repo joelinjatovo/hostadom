@@ -1,0 +1,137 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+        <!-- insertion topbar -->
+        {% include 'top.html.twig' %}
+
+        <!-- insertion header -->
+        {% include 'header.html.twig' %}
+
+
+        <div class="page-header three">
+            <div class="container">
+                <div class="col-md-6 left-padd0 m-bottom2">
+                    <h2 class="uppercase font-thin font-white font30 m-bottom1">Le nom de domaine po...</h2>
+                    <h4 class="font-white font18">Le nom de domaine pour votre entreprise à Madagascar</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="breadcrumbs view-links"><a href="{{ path('index') }}">Home</a> <i>/</i> <a href="#">Non classé</a><i>/</i><span class="current">Le nom de domaine pour votre entreprise à Madagascar</span></div>      </div>
+            </div>
+        </div>
+
+        <div class="section-lg m-top8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 left-padd0">
+                        <div class="post-1004 post type-post status-publish format-standard hentry category-non-classe" id="post-1004">
+                            <div class="col-md-12">           <h3 class="m-bottom2 font-thin font30"><a href="{{ path('blog2') }}">Le nom de domaine pour votre entreprise à Madagascar</a></h3>
+                                <p>Le choix du nom de domaine dépend de beaucoup de
+                                    paramètres dont le critère le plus tenu en compte est l’extension, la
+                                    possibilité de le retenir&nbsp;facilement et son impact au
+                                    référencement. Ce bref article a pour but de mettre en évidence
+                                    l’importance de choisir le .mg.</p>
+                                <p>Tout d’abord, Il est essentiel d’être présent sur le web quand on
+                                    entreprend. Plus de 3 internautes malagasy sur 4 recherchent et
+                                    considèrent la présence locale d’une entreprise par l’existence de son
+                                    domaine en .mg et de plus, les sites Internet des entreprises malagasy
+                                    en .mg serait beaucoup plus favorisé par les moteurs de recherches.</p>
+                                <p>Le .mg qui signifie un nom de domaine made in Madagascar, il nous
+                                    aide tous à valoriser notre savoir-faire malagasy et mais aussi partout
+                                    ailleurs dans le monde. Il signifie&nbsp;naturellement la présence de
+                                    votre entreprise à Madagascar.</p>
+                                <p>Même si vous avez déjà un domaine en .com ou .net etc. il vous est
+                                    toujours recommandé de réserver le domaine en .mg afin de protéger votre
+                                    entreprise de «&nbsp;cybersquatting&nbsp;» qui consiste à enregistrer
+                                    votre nom de domaine dans une autre extension afin de vous le revendre
+                                    plus cher.</p>
+                                <p>Pour en finir, chez Hostadom, chaque nom de domaine .mg inclut un hébergment web Starter. <a href="{{ path('domaine') }}">Tester la disponibilité de votre nom de domaine et Consulter nos offres</a></p>
+                                <div class="post-info m-top2 m-bottom5"><i class="fa fa-user"></i> By <a href="#" title="Posts by admin" rel="author">admin</a> on <a href="{{ path('blog2') }}">5 Jan 2017</a> <span class="left-padd3"><i class="fa fa-comments"></i> <a href="#">0</a></span> <span class="left-padd3"><i class="fa fa-folder-open-o"></i> Categories /  <a href="#" rel="category tag">Non classé</a></span>  </div>
+                            </div>
+                        </div>
+                        <div class="pagenation-blog">
+                        </div>
+                        <div id="comments" class="col-md-12">
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Sidebar-->
+                    <!--Right Sidebar-->
+                    <div class="col-md-3 maxhost_sidebar">
+                        <!--widget area-->
+                        <div class="clearfix"></div>
+                        <div id="recent-posts-2" class="widget m-bottom4 widget_recent_entries">
+                            <div class="cat-title white font-bold uppercase"><i class="fa fa-align-justify"></i> Hostadom Web Actu</div>
+                            <ul class="cat-list">
+                                <li>
+                                    <a href="{{ path('blog1') }}">Pour le débutant, ce qu’il faut savoir sur l’hébergement d’un site web</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('blog2') }}">Le nom de domaine pour votre entreprise à Madagascar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="categories-2" class="widget m-bottom4 widget_categories">
+                            <div class="cat-title white font-bold uppercase"><i class="fa fa-align-justify"></i> Categories</div>
+                            <ul class="cat-list">
+                                <li class="cat-item cat-item-1"><a href="#">Non classé</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!--End widget area-->
+                    </div>
+                    <!--End Right Sidebar-->	  <!--Sidebar end-->
+
+                </div>
+            </div>
+        </div>
+
+        <!--MAIN CONTENT END-->
+
+
+        <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+        {% include 'footer.html.twig' %}
+
+
+        <!-- insertion copyright -->
+        {% include 'copyright.html.twig' %}
+
+
+        <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+
+{% endblock %}

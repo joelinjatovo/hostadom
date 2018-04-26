@@ -1,0 +1,147 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+        <!-- insertion topbar -->
+        {% include 'top.html.twig' %}
+
+        <!-- insertion header -->
+        {% include 'header.html.twig' %}
+
+
+        <div class="page-header three">
+            <div class="container">
+                <div class="col-md-6 left-padd0 m-bottom2">
+                    <h2 class="uppercase font-thin font-white font30 m-bottom1">Contact Us</h2>
+                    <h4 class="font-grey-light font18 ">Get in Touch with Us</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="breadcrumbs view-links"><a href="{{ path('index') }}">Home</a> <i>/</i> <span class="current">Contact Hostadom</span></div>      </div>
+            </div>
+        </div>
+
+        <div class="section-lg m-top8 m-bottom7">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="address-info">
+                            <h2 class="uppercase m-bottom2">Address Info</h2>
+                            <p>Hostadom <br>
+                                Service d'hébergement web et serveur dédié VPS <br></p>
+                        </div>
+                        <!-- end section -->
+
+                        <div class="address-info m-top4">
+                            <h4 class="uppercase m-bottom2 font-bold">Reach Us</h4>
+                            <ul class="address-info map">
+                                <li><i class="fa fa-map-marker"></i> Lot II B 16 Ampandrana Ouest Antananarivo - Madagascar</li>
+                                <li><i class="fa fa-phone"></i> +261(0) 32 032 1020</li>
+                                <li><i class="fa fa-envelope"></i> support@hostadom.com</li>
+                            </ul>
+                        </div>
+                        <!-- end section -->
+                    </div>
+                    <div class="col-md-8">
+                        <h2 class="uppercase">send us a message</h2>
+
+                        <!-- début formulaire -->
+                        <form class="sky-form" id="contact-form" method="post" action="{{path('contact')}}" >
+                            <fieldset>
+                                {{ form_errors(form) }}
+                                <div class="row">
+                                    <div class="section col col-6">
+                                        <label class="label">Name</label>
+                                        <label class="input"> <i class="icon-append fa fa-user"></i>
+                                            {{ form_widget(form.name) }}
+                                            <!--<input name="contact-name" id="contact-name" type="text">-->
+                                        </label>
+                                    </div>
+                                    <div class="section col col-6">
+                                        <label class="label">E-mail</label>
+                                        <label class="input"> <i class="icon-append fa fa-envelope-o"></i>
+                                            {{ form_widget(form.email) }}
+                                            <!--<input name="contact-email" id="contact-email" type="email">-->
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="section">
+                                    <label class="label">Subject</label>
+                                    <label class="input"> <i class="icon-append fa fa-tags"></i>
+                                        {{ form_widget(form.subject) }}
+                                        <!--<input name="contact-subject" id="contact-subject" type="text">-->
+                                    </label>
+                                </div>
+                                <div class="section">
+                                    <label class="label">Message</label>
+                                    <label class="textarea"> <i class="icon-append fa fa-comment"></i>
+                                        {{ form_widget(form.message) }}
+                                        <!--<textarea name="contact-msg" id="contact-msg" rows="4"></textarea>-->
+                                    </label>
+                                </div>
+                                
+                                <input type="hidden" name="_token" value="{{ csrf_token('contact-form') }}" />
+                                
+                                <div id="contactsMsgs">
+                                {% for flashMessage in app.session.flashbag.get('success') %}
+                                    {{ flashMessage }}
+                                {% endfor %}
+                                </div>
+
+                                <div class="section" style="float:left;">
+                                    <input class="button" value="Send message" type="submit">
+                                </div>
+                            </fieldset>
+                            <span class="spinner spinner-style">Sending...</span>
+                        </form>
+                        <!-- fin formulaire -->
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!--MAIN CONTENT END-->
+
+
+        <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+        {% include 'footer.html.twig' %}
+
+
+        <!-- insertion copyright -->
+        {% include 'copyright.html.twig' %}
+
+
+        <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+
+{% endblock %}

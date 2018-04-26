@@ -1,0 +1,100 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1483136726563{background-color: #1c4e67 !important;}.vc_custom_1483137517337{background-color: #ffffff !important;}.vc_custom_1483136726563{background-color: #1c4e67 !important;}.vc_custom_1483137517337{background-color: #ffffff !important;}.vc_custom_1483136726563{background-color: #1c4e67 !important;}.vc_custom_1483137517337{background-color: #ffffff !important;}</style>
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+        <!-- insertion topbar -->
+        {% include 'top.html.twig' %}
+
+        <!-- insertion header -->
+        {% include 'header.html.twig' %}
+
+        <div class="container">
+            <div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" class="vc_row wpb_row vc_row-fluid vc_custom_1483136726563 vc_general vc_parallax vc_parallax-content-moving" style="padding: 60px 75.5px 50px; position: relative; left: -75.5px; box-sizing: border-box; width: 1351px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+                            <h3 class="text-center font-bold font-white font15 uppercase">inclus dans chaque</h3>
+
+                            <h2 class="text-center font-bold font-white font30 uppercase">Nom de domaine</h2>
+                            <div class="title-line-shape m-bottom3"></div><div class="vc_row wpb_row vc_inner vc_row-fluid"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">	<div class="fea-col text-center m-bottom4">
+                                                <div class="iconbox "><span class="icon-check font30"></span></div>
+                                                <h2 class="font-thin font20 m-top2 font-white">Control Panel</h2>
+                                                <p class="m-top1 font-white">Une interface intuitive facilitant la gestion de votre domaine.</p>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">	<div class="fea-col text-center m-bottom4">
+                                                <div class="iconbox active"><span class="icon-cloud font30"></span></div>
+                                                <h2 class="font-thin font20 m-top2 font-white">Hébergement Gratuit</h2>
+                                                <p class="m-top1 font-white">Un espace d’hébergement de 20MB est offert avec un compte FTP.</p>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">	<div class="fea-col text-center m-bottom4">
+                                                <div class="iconbox "><span class="icon-phone font30"></span></div>
+                                                <h2 class="font-thin font20 m-top2 font-white">Email et Webmail</h2>
+                                                <p class="m-top1 font-white">Une boîte mail est offerte avec accès à un webmail responsive.</p>
+                                            </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">	<div class="fea-col text-center m-bottom4">
+                                                <div class="iconbox "><span class="icon-gears font30"></span></div>
+                                                <h2 class="font-thin font20 m-top2 font-white">Gestion avancée</h2>
+                                                <p class="m-top1 font-white">Sous domaine illimité, Gestion de redirection, Gestion DNS ...</p>
+                                            </div></div></div></div></div></div></div></div><div class="vc_parallax-inner skrollable skrollable-between" style="height: 150%; top: -29.1351%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;"></div></div><div class="vc_row-full-width"></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-parallax="1.5" class="vc_row wpb_row vc_row-fluid vc_custom_1483137517337 vc_general vc_parallax vc_parallax-content-moving" style="position: relative; left: -75.5px; box-sizing: border-box; width: 1351px; padding-left: 75.5px; padding-right: 75.5px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+                            <div class="section-lg m-top5 m-bottom5">
+                                <div class="container">
+                                    <div class="row">
+
+
+                                        <div class="col-md-4">
+                                            <h2 class="font-thin font30 m-bottom1">Vérifiez la disponibilité votre domaine et réservez le :</h2>
+                                            <h5 class="font16"></h5>
+                                        </div>
+
+                                        <div class="col-md-8">
+
+                                            <form method="POST" id="domain-searchform" action="https://panel.hostadom.com/domainchecker.php?systpl=maxhost-alt-v7">
+
+                                                <input class="input-text dsearch-home2" name="domain" id="dsearch" placeholder="Entrer-votre-nom-de-domaine" type="text"><select class="selectpicker selectpicker-home2" name="ext" data-style="btn-primary"><option selected="selected">.com</option><option>.mg</option><option>.net</option><option>.org</option><option>.info</option></select><input class="btn blue-button uppercase" id="submit" value="RECHERCHER" type="submit">
+                                            </form>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                            </div></div></div></div><div class="vc_parallax-inner skrollable skrollable-between" style="height: 150%; top: -43.8765%;" data-bottom-top="top: -50%;" data-top-bottom="top: 0%;"></div></div><div class="vc_row-full-width"></div>
+        </div>
+
+        <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+        {% include 'footer.html.twig' %}
+
+
+        <!-- insertion copyright -->
+        {% include 'copyright.html.twig' %}
+
+        <!-- end footer -->
+
+        <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/skrollr.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,246 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+    <!-- insertion topbar -->
+    {% include 'top.html.twig' %}
+
+    <!-- insertion header -->
+    {% include 'header.html.twig' %}
+
+
+    <div class="page-header three">
+        <div class="container">
+            <div class="col-md-6 left-padd0 m-bottom2">
+                <h2 class="uppercase font-thin font-white font30 m-bottom1">Serveur...</h2>
+                <h4 class="font-white font18">Serveur</h4>
+            </div>
+            <div class="col-md-6">
+                <div class="breadcrumbs view-links"><a href="{{ path('index') }}">Home</a> <i>/</i> <span class="current">Serveur</span></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section-lg m-top8">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 left-padd0">
+
+                    <div class="col-md-12">
+                        <div class="vc_row wpb_row vc_row-fluid " style=" padding-bottom: 10px; padding-top: 10px; "><div class="wpb_column vc_column_container vc_col-sm-12">
+                                <div class="vc_column-inner ">
+                                    <div class="wpb_wrapper"><h2 class="font-black font-thin-xs uppercase font45 text-center m-bottom2"><span class="font-bold font-color">Serveur</span> dédié VPS - Linux</h2>
+                                        <div class="col-md-11 sec-auto-margin font-thin-xs font25 text-center m-bottom3">La haute disponibilité, la performance et la sécurité sont les points qui caractérisent nos serveurs. Vous faites ici un vrai choix d’infrastructure professionnelle.</div>
+                                        <div class="vc_row wpb_row vc_inner vc_row-fluid">
+                                            <div class="wpb_column vc_column_container vc_col-sm-3">
+                                                <div class="vc_column-inner ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="m-bottom4">
+                                                            <div class="pricing-box-grey">
+                                                                <div class="service-title-color">
+                                                                    <h2 class="font25 font-this font-white uppercase">VPS PERSO</h2>
+                                                                </div>
+                                                                <div class="price-black-bg font-white"><span class="font-bold font55">{{prixVPSPerso}}</span> <small class="font20 font-thin">/ AN</small>
+                                                                </div>
+                                                                <ul class="plan-list one font-white">
+                                                                    <li><i class="fa fa-check-square"></i>1 vCORE dédié (1x2.6Ghz)<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>1 Go RAM<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>50 Go Disque Dur<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Trafic illimité<br></li><li><i class="fa fa-check-square"></i>100Mbps Bande passante<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>1 adresse IP<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Backup automatisé<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Snapshot<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Distribution Linux<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Accès Root SSH<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Control Panel<br></li>
+                                                                </ul>
+                                                                <div class="button order-now one">
+                                                                    <a class="font20 font-color font-bold" href="https://panel.hostadom.com/cart.php?a=add&amp;pid=7">Commander <i class="fa fa-arrow-circle-right"></i></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="wpb_column vc_column_container vc_col-sm-3">
+                                                <div class="vc_column-inner ">
+                                                    <div class="wpb_wrapper">
+                                                        <div class="m-bottom4">
+                                                            <div class="pricing-box-grey">
+                                                                <div class="service-title-color">
+                                                                    <h2 class="font25 font-this font-white uppercase">VPS STANDARD</h2>
+                                                                </div>
+                                                                <div class="price-black-bg font-white"><span class="font-bold font55">{{prixVPSStandard}}</span> <small class="font20 font-thin">/ AN</small>
+                                                                </div>
+                                                                <ul class="plan-list one font-white">
+                                                                    <li><i class="fa fa-check-square"></i>1 vCORE dédié (1x2.6Ghz) <br /></li>
+                                                                    <li><i class="fa fa-check-square"></i>2 Go RAM <br /></li>
+                                                                    <li><i class="fa fa-check-square"></i>100 Go Disque Dur <br ></li>
+                                                                    <li><i class="fa fa-check-square"></i>Trafic illimité <br /></li>
+                                                                    <li><i class="fa fa-check-square"></i>100Mbps Bande passante<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>1 adresse IP<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Backup automatisé<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Snapshot<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Distribution Linux<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Accès Root SSH<br></li>
+                                                                    <li><i class="fa fa-check-square"></i>Control Panel</li>
+                                                                </ul>
+                                                                <div class="button order-now one"><a class="font20 font-color font-bold" href="https://panel.hostadom.com/cart.php?a=add&amp;pid=8">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                            </div>
+                                                        </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+                                                        <div class="m-bottom4">
+                                                            <div class="pricing-box-grey">
+                                                                <div class="service-title-color">
+                                                                    <h2 class="font25 font-this font-white uppercase">VPS PRO</h2>
+                                                                </div>
+                                                                <div class="price-black-bg font-white"><span class="font-bold font55">{{prixVPSPro}}</span> <small class="font20 font-thin">/ AN</small></div>
+                                                                <ul class="plan-list one font-white"><li><i class="fa fa-check-square"></i>LE PLUS VENDU<br></li><li><i class="fa fa-check-square"></i>2 vCORE dédié (1x2.6Ghz)<br></li><li><i class="fa fa-check-square"></i>4 Go RAM<br></li><li><i class="fa fa-check-square"></i>250 Go Disque Dur<br></li><li><i class="fa fa-check-square"></i>Trafic illimité<br></li><li><i class="fa fa-check-square"></i>100Mbps Bande passante<br></li><li><i class="fa fa-check-square"></i>1 adresse IP<br></li><li><i class="fa fa-check-square"></i>Backup automatisé<br></li><li><i class="fa fa-check-square"></i>Snapshot<br></li><li><i class="fa fa-check-square"></i>Distribution Linux<br></li><li><i class="fa fa-check-square"></i>Accès Root SSH<br></li><li><i class="fa fa-check-square"></i>Control Panel</li></ul>
+                                                                <div class="button order-now one"><a class="font20 font-color font-bold" href="https://panel.hostadom.com/cart.php?a=add&amp;pid=9">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                            </div>
+                                                        </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+                                                        <div class="m-bottom4">
+                                                            <div class="pricing-box-grey">
+                                                                <div class="service-title-color">
+                                                                    <h2 class="font25 font-this font-white uppercase">VPS PERFORMANCE</h2>
+                                                                </div>
+                                                                <div class="price-black-bg font-white"><span class="font-bold font55">{{prixVPSPerformance}}</span> <small class="font20 font-thin">/ AN</small></div>
+                                                                <ul class="plan-list one font-white"><li><i class="fa fa-check-square"></i>4 vCORE dédié (2x2.6Ghz)<br></li><li><i class="fa fa-check-square"></i>8 Go RAM<br></li><li><i class="fa fa-check-square"></i>500 Go Disque Dur<br></li><li><i class="fa fa-check-square"></i>Trafic illimité<br></li><li><i class="fa fa-check-square"></i>100Mbps Bande passante<br></li><li><i class="fa fa-check-square"></i>1 adresse IP<br></li><li><i class="fa fa-check-square"></i>Backup automatisé<br></li><li><i class="fa fa-check-square"></i>Snapshot<br></li><li><i class="fa fa-check-square"></i>Distribution Linux<br></li><li><i class="fa fa-check-square"></i>Accès Root SSH<br></li><li><i class="fa fa-check-square"></i>Control Panel<br></li></ul>
+                                                                <div class="button order-now one"><a class="font20 font-color font-bold" href="https://panel.hostadom.com/cart.php?a=add&amp;pid=10">Commander <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                            </div>
+                                                        </div></div></div></div></div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -75.5px; box-sizing: border-box; width: 1351px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="section-lg bg-parallax-6 m-top3">
+                                            <div class="container">
+                                                <div class="">
+                                                    <h2 class="font-thin-xs uppercase font45 text-center font-white m-bottom3"><span class="font-color font-bold">24/7</span> SERVICE CLIENT<br>
+                                                    </h2>
+                                                    <div class="col-md-11 sec-auto-margin font-thin-xs font25 text-center m-bottom6 font-white">Assuré par des professionnels, notre Service Client est ouvert 24/7.</div>
+                                                    <div data-anim-delay="100" data-anim-type="fade-in-up" class="button text-center"><a href="https://panel.hostadom.com/submitticket.php" class="btn whte-border font20 font-thin">Nous contacter</a></div>
+                                                </div>
+                                            </div>
+                                        </div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row wpb_row vc_row-fluid " style=" padding-top: 70px; "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h2 class="font-black font-thin-xs uppercase font45 text-center m-bottom2"><span class="font-bold font-color">Inclus</span> Dans chaque serveur privé</h2>
+                                        <div class="col-md-11 sec-auto-margin font-thin-xs font25 text-center m-bottom3">Nous mettons à votre profit ce que votre entreprise a besoin.</div></div></div></div></div><div class="vc_row wpb_row vc_row-fluid " style=" "><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="col-md-12 text-left m-bottom5">
+                                            <div class="fea-sce-col ">
+                                                <div class="icon-boxed wide90"><span class="icon-speedometer  font30"></span></div>
+                                                <div class="left-padd11">
+                                                    <h2 class="font-thin m-bottom1">Interface Panel</h2>
+                                                    <p>Redémarrer, éteindre ou réinstaller, vous n'avez pas besoin de notre intervention et c'est illimité.</p>
+                                                </div>
+                                            </div>
+                                        </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="col-md-12 text-left m-bottom5">
+                                            <div class="fea-sce-col ">
+                                                <div class="icon-boxed wide90"><span class="icon-cloud-upload font30"></span></div>
+                                                <div class="left-padd11">
+                                                    <h2 class="font-thin m-bottom1">Pré-installé</h2>
+                                                    <p>Serveur virtuel pré-installé et prêt à l'emploi, distributions Linux : Debian, Ubuntu, Centos</p>
+                                                </div>
+                                            </div>
+                                        </div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="col-md-12 text-left m-bottom5">
+                                            <div class="fea-sce-col active">
+                                                <div class="icon-boxed wide90"><span class="icon-phone font30"></span></div>
+                                                <div class="left-padd11">
+                                                    <h2 class="font-thin m-bottom1">Accès Root SSH</h2>
+                                                    <p>Vous administrez votre serveur en toute autonomie.</p>
+                                                </div>
+                                            </div>
+                                        </div></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="true" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding" style="position: relative; left: -75.5px; box-sizing: border-box; width: 1351px;"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="section-lg bg-parallax-4 m-top5 ">
+
+                                            <div class="container ">
+                                                <div class="row">
+
+                                                    <div class="col-md-6 m-bottom3"> <img src="{{ asset('images/site-img25.png') }}" class="img-responsive attachment-full" alt="" sizes="(max-width: 500px) 100vw, 500px" height="331" width="500"> </div>
+
+
+                                                    <div class="col-md-6 m-bottom3">
+
+                                                        <h2 class="font-bold font18 font-white m-bottom1">OFFREZ DES SERVEURS VPS A VOS CLIENTS</h2>
+                                                        <h2 class="font-thin font15 font-white m-bottom1">Gagner jusqu'à <span class="font-bold font50 font-color">20%</span> de remise</h2>
+                                                        <p class="font-color">valable à partir du deuxième serveur</p>
+                                                        <p class="font-white m-top2">Hostadom est un hébergeur
+                                                            professionnel. Nous ne faisons aucune autre prestation. Nous
+                                                            recommandons nos partenaires techniques à nos clients finaux afin de
+                                                            leur donner un large choix de prestataires pour leur projet.</p>
+                                                        <div class="button m-top3"><a href="{{ path('contact') }}" class="btn boxed-color-sm font18 orange">Devenez Partenaires <i class="fa fa-arrow-circle-right"></i></a></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div></div></div></div></div><div class="vc_row-full-width"></div><div class="vc_row wpb_row vc_row-fluid " style=" padding-top: 70px; "><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="section-lg ">
+                                            <div class="container">
+
+                                                <div class="col-md-6 col-sm-6 m-bottom3"> <img src="{{ asset('images/cloud_concept.jpg') }}" class="img-responsive attachment-full" alt="" height="200" width="300"> </div>
+
+                                                <div class="col-md-6 col-sm-6">
+                                                    <h4 class="font-black font-bold font15 uppercase">ILS ONT DES SERVEURS CHEZ NOUS</h4>
+                                                    <h2 class="font-black font-bold font30 m-bottom3 uppercase">NOS CLIENTS</h2>
+
+                                                    <div class="col-md-4 col-sm-6 col-xs-6 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client6-perfection.png') }}" class="img-responsive attachment-full" alt="" height="56" width="143"> </div>
+
+                                                    <div class="col-md-4 col-sm-6 col-xs-6 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client1-1.png') }}'" class="img-responsive attachment-full" alt="" height="56" width="169"> </div>
+
+                                                    <div class="col-md-4 col-sm-6 col-xs-6 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client3-HLR.png') }}" class="img-responsive attachment-full" alt="" height="56" width="143"> </div>
+
+                                                    <div class="col-md-4 col-sm-6 col-xs-6 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client4-domi.png') }}'" class="img-responsive attachment-full" alt="" height="56" width="173"> </div>
+
+                                                    <div class="col-md-4 col-sm-6 col-xs-6 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client5-plans-group.png') }}" class="img-responsive attachment-full" alt="" height="56" width="171"> </div>
+
+                                                    <div class="col-md-4 col-sm-6 col-xs-6 text-center m-bottom2 left-padd0"> <img src="{{ asset('images/client2-1.png') }}'" class="img-responsive attachment-full" alt="" height="56" width="175"> </div>
+
+                                                </div>
+                                            </div>
+                                        </div></div></div></div></div>
+                    </div>
+
+                    <div class="pagenation-blog">
+                    </div>
+                    <div id="comments" class="col-md-12">
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    {% include 'footer.html.twig' %}
+    <!-- insertion copyright -->
+    {% include 'copyright.html.twig' %}
+    <!-- end footer -->
+
+    <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+
+{% endblock %}
+
+{% block javascripts %}
+
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+
+{% endblock %}

@@ -1,0 +1,137 @@
+{% extends 'base2.html.twig' %}
+
+{% block stylesheets %}
+
+    <style id="rs-plugin-settings-inline-css" type="text/css">
+        #rs-demo-id {}
+    </style>
+
+    <script type="text/javascript" src="{{ asset('js/jquery_004.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/jquery_002.js') }}"></script>
+
+    <noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript>
+
+{% endblock %}
+
+{% block body %}
+
+    <div class="preloader" style="display: none;">
+        <div class="preloader_status" style="display: none;"></div>
+    </div>
+    <!-- end page loader -->
+
+    <div class="site_wrapper">
+
+        <!-- insertion topbar -->
+        {% include 'top.html.twig' %}
+
+        <!-- insertion header -->
+        {% include 'header.html.twig' %}
+
+
+        <div class="page-header three">
+            <div class="container">
+                <div class="col-md-6 left-padd0 m-bottom2">
+                    <h2 class="uppercase font-thin font-white font30 m-bottom1">Pour le débutant, ce...</h2>
+                    <h4 class="font-white font18">Pour le débutant, ce qu’il faut savoir sur l’hébergement d’un site web</h4>
+                </div>
+                <div class="col-md-6">
+                    <div class="breadcrumbs view-links">
+                        <a href="{{ path('index') }}">Home</a>
+                        <i>/</i> <a href="#">Non classé</a>
+                        <i>/</i><span class="current">Pour le débutant, ce qu’il faut savoir sur l’hébergement d’un site web</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="section-lg m-top8">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-9 left-padd0">
+                        <div class="post-1006 post type-post status-publish format-standard hentry category-non-classe" id="post-1006">
+                            <div class="col-md-12">
+                                <h3 class="m-bottom2 font-thin font30">
+                                    <a href={{ path('blog1') }}>Pour le débutant, ce qu’il faut savoir sur l’hébergement d’un site web</a>
+                                </h3>
+                                <p>Un site web a besoin d’un hébergement pour qu’il soit accessible via internet. Un serveur web est donc derrière chaque site
+                                    internet que nous consultons tous le jour.</p>
+                                <p>C’est dans cet espace d’hébergement que se gère les noms de domaine,le transfert de site par FTP (File Transfer Protocol), la création et la
+                                    gestion de base de donnée et beaucoup d’autres fonctionnalités en fonction de votre besoin et de l’offre que vous avez pris auprès de
+                                    votre hébergeur.</p>
+                                <div class="post-info m-top2 m-bottom5">
+                                    <i class="fa fa-user"></i> By
+                                    <a href="#" title="Posts by admin" rel="author">admin</a> on
+                                    <a href="{{ path('blog1') }}">5 Jan 2017</a>
+                                    <span class="left-padd3"><i class="fa fa-comments"></i> <a href="#">0</a></span>
+                                    <span class="left-padd3"><i class="fa fa-folder-open-o"></i> Categories /  <a href="#" rel="category tag">Non classé</a></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pagenation-blog">
+                        </div>
+                        <div id="comments" class="col-md-12">
+
+
+
+                        </div>
+
+                    </div>
+
+                    <!--Sidebar-->
+                    <!--Right Sidebar-->
+                    <div class="col-md-3 maxhost_sidebar">
+                        <!--widget area-->
+                        <div class="clearfix"></div>
+                        <div id="recent-posts-2" class="widget m-bottom4 widget_recent_entries">
+                            <div class="cat-title white font-bold uppercase"><i class="fa fa-align-justify"></i> Hostadom Web Actu</div>
+                            <ul class="cat-list">
+                                <li>
+                                    <a href="{{ path('blog1') }}">Pour le débutant, ce qu’il faut savoir sur l’hébergement d’un site web</a>
+                                </li>
+                                <li>
+                                    <a href="{{ path('blog2') }}">Le nom de domaine pour votre entreprise à Madagascar</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <div id="categories-2" class="widget m-bottom4 widget_categories">
+                            <div class="cat-title white font-bold uppercase"><i class="fa fa-align-justify"></i> Categories</div>
+                            <ul class="cat-list">
+                                <li class="cat-item cat-item-1"><a href="#">Non classé</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="clearfix"></div>
+                        <!--End widget area-->
+                    </div>
+                    <!--End Right Sidebar-->
+                    <!--Sidebar end-->
+
+                </div>
+            </div>
+        </div>
+
+        <!--MAIN CONTENT END-->
+
+
+        <!-- COPY START FROM THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+        {% include 'footer.html.twig' %}
+
+
+        <!-- insertion copyright -->
+        {% include 'copyright.html.twig' %}
+
+
+        <!-- COPY END TILL THIS LINE TO PLACE THIS INTO THE FOOTER.TPL OF WHMCS Maxhost-alt TEMPLATE -->
+    </div>
+    <!-- site wrapper end -->
+
+{% endblock %}
+
+{% block javascripts %}
+
+    <script type="text/javascript" src="{{ asset('js/jquery_003.js') }}"></script>
+    <script type="text/javascript" src="{{ asset('js/owl.js') }}"></script>
+
+{% endblock %}
